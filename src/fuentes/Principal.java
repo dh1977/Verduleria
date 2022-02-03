@@ -31,6 +31,7 @@ public class Principal {
 		ventas.add( 
 			new Venta(localXid(1), clienteXid(11), 
 						LocalDateTime.of(2022,2,2,11,30), motoBoyXid(3), 10101) );
+		// Detalle
 		ventaXboleta(10101).getDetVenta().add(new DetalleVenta(productoXid(101), 1, 1000));
 		ventaXboleta(10101).getDetVenta().add(new DetalleVenta(productoXid(201), 2, 1400));
 		
@@ -38,6 +39,7 @@ public class Principal {
 		ventas.add( 
 			new Venta(localXid(2), clienteXid(22), 
 						LocalDateTime.of(2022,2,2,13,15),motoBoyXid(5),10130) );
+		// Detalle
 		ventaXboleta(10130).getDetVenta().add(new DetalleVenta(productoXid(201), 1, 700));
 		ventaXboleta(10130).getDetVenta().add(new DetalleVenta(productoXid(301), 1.5f, 1800));
 		ventaXboleta(10130).getDetVenta().add(new DetalleVenta(productoXid(101), 1, 1000));
