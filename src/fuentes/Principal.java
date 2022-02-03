@@ -71,10 +71,18 @@ public class Principal {
 
 		System.out.println("--------------");
 
+		// Productos
+		System.out.println("Productos:");
+		for (Producto p:productos) 
+			System.out.printf("- ID: %d   Nombre: %s   Tipo: %s   Unid.medida: %s\n", 
+						p.getId(), p.getNombre(), p.getTipo(), p.getUnidadMedida());
+
+		System.out.println("--------------");
+
 		// Ventas
-		int n = 1;
+		int n = 0;
 		for (Venta v:ventas) {
-			System.out.printf("Venta %d: \n",n++);
+			System.out.printf("Venta %d: \n",++n);
 			
 			System.out.printf("- Fecha: %tF   Boleta: %d   Clte.: %s\n", 
 						v.getFechaHora(), v.getBoleta(), v.getCliente().getNombre());
