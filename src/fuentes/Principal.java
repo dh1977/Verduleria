@@ -130,7 +130,7 @@ public class Principal {
 		return null;
 	}
 
-	// Rescate de un objeto 'Producto' por medio de su id
+	// Rescate de un objeto 'Venta' por medio de su boleta
 	private static Venta ventaXboleta (int b) {
 		for (Venta v:ventas) 
 			if ( v.getBoleta() == b )
